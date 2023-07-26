@@ -137,22 +137,6 @@ public class MainActivity extends AppCompatActivity {
         addClientes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                tessBaseAPI = new TessBaseAPI();
-//                tessBaseAPI.init(getExternalFilesDir(null).getAbsolutePath() + "tessdata", "eng"); // Cambia "eng" por el código del idioma correspondiente
-//
-//
-//                // Aquí puedes implementar la funcionalidad de tomar una foto y convertirla en un bitmap
-//
-//                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.textread); // Reemplaza "your_image" por el nombre de tu imagen
-//
-//                tessBaseAPI.setImage(bitmap);
-//                String recognizedText = tessBaseAPI.getUTF8Text();
-//
-////        TextView textView = findViewById(R.id.textView);
-//                mensaje.setText(recognizedText);
-
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 // Get the layout inflater
                 LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
@@ -199,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         depurarContactos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                listaClientes.clear();
                 if (mensaje.getText().toString().equalsIgnoreCase("")) {
                     Toast.makeText(MainActivity.this, "No hay contactos que depurar", Toast.LENGTH_SHORT).show();
                 } else {
