@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
                 listaAdapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, nombre_numero_cliente);
                 lvClientes.setAdapter(listaAdapter);
                 mensaje.setText("");
-                //modificacion git
+                //modificacion git nueva de nueva
             }
         });
 
