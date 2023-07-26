@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addDestinatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/p_rojo"
+        android:text="Agregar contacto 1x1"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/addDestinatariosCompartidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/p_rojo"
+        android:text="Agregar contactos compartidos"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/depurarContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/p_rojo"
+        android:text="Depurar contactos"
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Escriba su mensaje"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/p_rojo"
+        android:text="Enviar mensajes"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/cantidadClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Cantidad de clientes: 0"
+        android:textColor="#5C5B5B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvClientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
